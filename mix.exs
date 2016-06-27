@@ -14,7 +14,8 @@ defmodule PaperTrading.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [mod: {PaperTrading, []},
+     applications: [:logger, :timex]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +28,8 @@ defmodule PaperTrading.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:timex, "~> 2.2.1"}
+    ]
   end
 end
