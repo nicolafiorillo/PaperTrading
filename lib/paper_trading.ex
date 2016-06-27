@@ -1,0 +1,2 @@
+defmodule PaperTrading do
+end
